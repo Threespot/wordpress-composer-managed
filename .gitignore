@@ -13,6 +13,33 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/cache/*
 
+# Overrides to keep files
+!web/wp-content/
+web/wp-content/*
+
+!web/app/mu-plugins/
+web/app/mu-plugins/*
+!web/app/mu-plugins/.gitkeep
+
+!web/wp-content/plugins/
+web/wp-content/plugins/*
+!web/wp-content/plugins/.gitkeep
+
+!web/wp-content/themes
+web/wp-content/themes/*
+!web/wp-content/themes/.gitkeep
+
+# Kepp Acorn cache folder
+!web/wp-content/uploads
+web/wp-content/uploads/*
+!web/wp-content/uploads/cache
+web/wp-content/uploads/cache/*
+!web/wp-content/uploads/cache/.gitkeep
+!web/wp-content/uploads/cache/
+
+!web/app/mu-plugins/custom-post-types
+!web/app/mu-plugins/custom-taxonomies
+
 # WordPress is installed in web/wp so that it can be fully managed by Composer.
 # This ensures that the WordPress directory is clean and doesn't contain any
 # files other than those that come with the WordPress package.
@@ -65,7 +92,7 @@ wp-cli.local.yml
 # By default, individual mu-plugin files are not ignored, so any bare file in
 # mu-plugins is version controlled. Exceptions to this rule are made to specific
 # files managed by Composer.
-web/app/mu-plugins/*/
+# web/app/mu-plugins/*/
 
 # Plugins
 # Ignore the plugins directory by default. WordPress plugins should be managed
